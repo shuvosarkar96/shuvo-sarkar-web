@@ -1,0 +1,11 @@
+What should be in Assets folder:
+
+# Organized with your source code, imported
+# Source-controlled images
+# icons
+# fonts for components
+
+e.g.
+
+import logo from '@/assets/images/logo.png';
+<Image src={logo} alt="Logo" />

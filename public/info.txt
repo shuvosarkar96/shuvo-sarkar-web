@@ -1,0 +1,9 @@
+What should be in Public folder:
+
+# Static, global files which can direct URL access, no import needed.
+# favicon
+# sitemap
+# robots.txt, 
+# big images
+
+e.g. <img src="/logo.png" alt="Logo" />
