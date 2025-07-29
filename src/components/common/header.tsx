@@ -1,3 +1,5 @@
+import HoverText from "./hoverText";
+
 export default function Header() {
   return (
     <header className="w-full px-4 py-6 border-b border-gray-200">
@@ -9,26 +11,17 @@ export default function Header() {
             <p className="text-gray-600">Dhaka, Bangladesh</p>
           </div>
 
-          <div>
-            <p className="font-medium">Say hello or anything</p>
-            <a
-              href="mailto:shuvo.sarkar.official@gmail.com"
-              className="inline-block relative group"
-            >
-              shuvo.sarkar.official@gmail.com
-              <span className="block h-[1px] bg-gray-300 group-hover:bg-gray-800 transition-all duration-300 origin-left scale-x-100 group-hover:scale-x-100 mt-1 transform" />
-              <span className="absolute bottom-0 left-0 g-g1px] w-full bg-gray-800 scale-x-0 group-hover:scale-x-100 transform transition-transform duration-300 origin-left" />
-            </a>
-          </div>
+          <HoverText
+            href="mailto:shuvo.sarkar.official@gmail.com"
+            label="shuvo.sarkar.official@gmail.com"
+            subText="Say hello or anything"
+          />
 
-          <div>
-            <p className="font-medium">Switch to</p>
-            <button className="inline-block relative group">
-              Comfort mode
-              <span className="block h-[1px] bg-gray-300 group-hover:bg-gray-800 transition-all duration-300 origin-left scale-x-100 group-hover:scale-x-100 mt-1 transform" />
-              <span className="absolute bottom-0 left-0 h-[1px] w-full bg-gray-800 scale-x-0 group-hover:scale-x-100 transform transition-transform duration-300 origin-left" />
-            </button>
-          </div>
+          <HoverText
+            subText="Switch to"
+            label="Comfort mode"
+            onClick={() => console.log("Switched to comfort mode")}
+          />
         </div>
 
         {/* Navigation links */}
