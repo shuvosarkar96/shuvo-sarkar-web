@@ -1,3 +1,4 @@
+'use client';
 import HoverText from "./hoverText";
 
 export default function Header() {
