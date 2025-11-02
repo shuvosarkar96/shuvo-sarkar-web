@@ -1,11 +1,5 @@
-What should be in Assets folder:
+src/assets/
 
-# Organized with your source code, imported
-# Source-controlled images
-# icons
-# fonts for components
+Icons, React component SVGs, JS-imported media
 
-e.g.
-
-import logo from '@/assets/images/logo.png';
-<Image src={logo} alt="Logo" />
+import ... from "@/assets/...";
