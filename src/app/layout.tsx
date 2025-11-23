@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/common/header";
 import Footer from "@/components/common/footer";
 import { supreme } from "./fonts";
 
@@ -28,12 +27,11 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={supreme.variable} // ← Fixed: no quotes, direct variable
+      className={supreme.variable}
     >
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${supreme.variable} antialiased`}
       >
-        <Header />
         {children}
         <Footer />
       </body>

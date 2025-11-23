@@ -3,7 +3,7 @@ import HoverText from "./hoverText";
 
 export default function Header() {
   return (
-    <header className="w-full px-4 py-6 border-b border-gray-200">
+    <header className="w-full py-6">
       <div className="container mx-auto flex flex-col md:flex-row md:items-center md:justify-between space-y-4 md:space-y-0">
         {/* Left info blocks */}
         <div className="flex flex-col md:flex-row md:space-x-12 text-sm text-gray-800">
