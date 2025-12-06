@@ -3,13 +3,13 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --font-primary: var(--font-supreme), Inter, system-ui, sans-serif;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-primary);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,8 +19,25 @@
   }
 }
 
+html {
+  font-weight: 400;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-primary);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+pre,
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+.page-wrapper {
+  @apply max-w-7xl mx-auto px-5 sm:px-8 md:px-12 lg:px-20;
 }
