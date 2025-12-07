@@ -6,8 +6,8 @@ export default function Header() {
   const [open, setOpen] = useState(false)
 
   return (
-    <header className="w-full py-6 relative">
-      <div className="container mx-auto flex items-center justify-between">
+    <header className="py-6 relative">
+      <div className="flex items-center justify-between">
         
         {/* Left info section */}
         <div className="flex flex-col md:flex-row md:space-x-12 font-medium text-gray-800">

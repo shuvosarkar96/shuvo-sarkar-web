@@ -8,16 +8,14 @@ export const metadata: Metadata = {
   description: "Yet another below average developer",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={supreme.variable}>
       <body className="font-sans antialiased">
+        <main className="page-wrapper">
           {children}
-        <Footer />
+          <Footer />
+        </main>
       </body>
     </html>
   );
