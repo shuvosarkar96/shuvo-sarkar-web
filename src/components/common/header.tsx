@@ -10,7 +10,7 @@ export default function Header() {
       <div className="flex items-center justify-between">
         
         {/* Left info section */}
-        <div className="flex flex-col md:flex-row md:space-x-12 font-medium text-gray-800">
+        <div className="flex flex-col md:flex-row md:space-x-12">
           <div>
             <p>Based in</p>
             <p>Dhaka, Bangladesh</p>
@@ -32,7 +32,7 @@ export default function Header() {
         </div>
 
         {/* Desktop Navigation (hidden on mobile) */}
-        <nav className="hidden md:flex space-x-6 font-medium text-gray-800">
+        <nav className="hidden md:flex space-x-6">
           <a href="#about" className="hover:text-black transition">ABOUT</a>
           <a href="#experience" className="hover:text-black transition">EXPERIENCE</a>
           <a href="#projects" className="hover:text-black transition">PROJECTS</a>
@@ -41,7 +41,7 @@ export default function Header() {
 
         {/* Mobile MENU button */}
         <button 
-          className="md:hidden font-medium text-gray-800 underline underline-offset-4"
+          className="md:hidden font-medium underline underline-offset-4"
           onClick={() => setOpen(true)}
         >
           MENU
@@ -69,7 +69,7 @@ export default function Header() {
           </div>
 
           {/* Bottom section inside menu */}
-          <div className="absolute bottom-10 left-7 flex justify-between w-[90%] text-sm font-medium">
+          <div className="absolute right-7 bottom-10 w-[90%] text-right flex flex-col gap-4">
             <HoverText 
               label="shuvo.sarkar.official@gmail.com"
               subText="Say hello"

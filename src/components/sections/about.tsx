@@ -1,57 +1,50 @@
+import HoverText from "../common/hoverText";
+
 export default function About() {
   return (
-    <section className="bg-white text-gray-900">
-      <div className="max-w-7xl mx-auto px-6 py-12 md:py-20 lg:py-28">
+    <section className="bg-white md:h-screen md:flex md:items-center md:justify-center">
+      <div className="py-12 md:py-20 lg:py-28">
         {/* Heading */}
-        <h2 className="text-4xl md:text-5xl font-extralight tracking-tight mb-6 md:mb-8">
+        <h2 className="text-4xl md:text-5xl font-medium tracking-tight mb-6 md:mb-8">
           ABOUT
         </h2>
 
-        <hr className="border-gray-200 mb-8" />
+        <hr className="border-2 border-gray-200 mb-8" />
 
         {/* Desktop: grid with two columns; Mobile: stacked */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-          {/* Left large lead text (on desktop spans cols 1-7) */}
-          <div className="lg:col-span-7">
-            <p className="text-2xl sm:text-3xl md:text-4xl font-medium leading-tight md:leading-snug max-w-2xl">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start lg:auto-rows-fr">
+          {/* Left large lead text */}
+          <div className="lg:col-span-7 h-full flex flex-col justify-between">
+            <p className="text-2xl sm:text-3xl md:text-4xl font-medium text-gray-800 leading-tight md:leading-snug">
               Over the years, I have worked on customer-facing products with a strong focus on excellent user experience and accessibility
             </p>
 
-            {/* Footer area (under the big lead text on mobile, bottom-left on desktop) */}
-            <div className="mt-10 md:mt-12">
-              <div className="flex flex-col sm:flex-row sm:items-baseline sm:space-x-10 gap-6">
-                <div className="flex flex-col space-y-2">
-                  <span className="text-sm font-medium">Product Development</span>
-                  <span className="text-sm">UX/UI &amp; Design</span>
-                </div>
-
-                <div className="flex flex-col">
-                  <span className="text-sm font-medium">Say hello</span>
-                  <a
-                    href="mailto:privet.dev@pm.me"
-                    className="text-sm pb-1 border-b border-gray-300 inline-block w-max"
-                  >
-                    privet.dev@pm.me
-                  </a>
-                </div>
-
-                <div className="flex flex-col">
-                  <span className="text-sm">&nbsp;</span>
-                  <a
-                    href="#"
-                    className="text-sm pb-1 border-b border-gray-300 inline-block w-max"
-                    aria-label="Explore LinkedIn"
-                  >
-                    Explore LinkedIn ↗
-                  </a>
-                </div>
+            <div className="hidden md:flex md:gap-8">
+              <div className="flex flex-col gap-2">
+                <span>Frontend Development</span>
+                <span>UI / UX Design</span>
               </div>
+
+              <HoverText
+                href="mailto:shuvo.sarkar.official@gmail.com"
+                label="shuvo.sarkar.official@gmail.com"
+                subText="Say hello or anything"
+                className="hidden md:block"
+              />
+
+              <HoverText
+                href="#"
+                label="shuvo.sarkar.official@gmail.com"
+                subText="Explore LinkedIn ↗"
+                className="hidden md:block"
+              />
             </div>
           </div>
 
+
           {/* Right column paragraphs (on desktop spans cols 8-12) */}
-          <div className="lg:col-span-5">
-            <div className="prose prose-sm max-w-none text-gray-700">
+          <div className="lg:col-span-5 h-full">
+            <div className="prose prose-sm max-w-none">
               <p className="mb-6">
                 Self-taught software engineer with a strong knowledge of TypeScript, Swift, and Java. I am passionate about working on meaningful projects that have a positive impact on people's lives.
               </p>
@@ -68,6 +61,28 @@ export default function About() {
                 I am fluent in English and Russian and have experience working and studying in an international environment.
               </p>
             </div>
+          </div>
+
+          {/* Mobile only visible */}
+          <div className="flex flex-col gap-2 text-right md:hidden">
+            <div className="flex flex-col">
+              <span>Frontend Development</span>
+              <span>UI / UX Design</span>
+            </div>
+
+            <HoverText
+              href="mailto:shuvo.sarkar.official@gmail.com"
+              label="shuvo.sarkar.official@gmail.com"
+              subText="Say hello or anything"
+              className="block"
+            />
+
+            <HoverText
+              href="#"
+              label="shuvo.sarkar.official@gmail.com"
+              subText="Explore LinkedIn ↗"
+              className="block"
+            />
           </div>
         </div>
       </div>
