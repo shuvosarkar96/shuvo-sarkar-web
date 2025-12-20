@@ -9,7 +9,7 @@ export default function About() {
           ABOUT
         </h2>
 
-        <hr className="border-2 border-gray-200 mb-8" />
+        <hr className="border-2 border-gray-200 mb-12" />
 
         {/* Desktop: grid with two columns; Mobile: stacked */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start lg:auto-rows-fr">
@@ -19,11 +19,11 @@ export default function About() {
               Over the years, I have worked on customer-facing products with a strong focus on excellent user experience and accessibility
             </p>
 
-            <div className="hidden md:flex md:gap-8">
-              <div className="flex flex-col gap-2">
-                <span>Frontend Development</span>
-                <span>UI / UX Design</span>
-              </div>
+            <div className="hidden md:flex items-end md:gap-8">
+              <ul className="flex flex-col gap-1">
+                <li>Frontend Development</li>
+                <li>UI / UX Design</li>
+              </ul>
 
               <HoverText
                 href="mailto:shuvo.sarkar.official@gmail.com"
@@ -34,8 +34,7 @@ export default function About() {
 
               <HoverText
                 href="#"
-                label="shuvo.sarkar.official@gmail.com"
-                subText="Explore LinkedIn ↗"
+                label="Explore LinkedIn ↗"
                 className="hidden md:block"
               />
             </div>
@@ -65,10 +64,10 @@ export default function About() {
 
           {/* Mobile only visible */}
           <div className="flex flex-col gap-2 text-right md:hidden">
-            <div className="flex flex-col">
-              <span>Frontend Development</span>
-              <span>UI / UX Design</span>
-            </div>
+            <ul className="flex flex-col">
+              <li>Frontend Development</li>
+              <li>UI / UX Design</li>
+            </ul>
 
             <HoverText
               href="mailto:shuvo.sarkar.official@gmail.com"
@@ -79,8 +78,7 @@ export default function About() {
 
             <HoverText
               href="#"
-              label="shuvo.sarkar.official@gmail.com"
-              subText="Explore LinkedIn ↗"
+              label="Explore LinkedIn ↗"
               className="block"
             />
           </div>
