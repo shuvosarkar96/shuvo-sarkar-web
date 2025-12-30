@@ -3,7 +3,7 @@ import DownLeftArrow from "@/assets/icons/down-left-arrow.svg";
 
 export default function Hero() {
   return (
-    <section className="h-screen flex flex-col">
+    <section className="h-screen flex flex-col py-8 lg:py-10">
       {/* Top */}
       <Header />
 
@@ -16,7 +16,7 @@ export default function Hero() {
       </div>
 
       {/* Bottom (tagline at screen bottom) */}
-      <div className="pb-8 text-right text-xl sm:text-3xl md:text-4xl">
+      <div className="text-right text-xl sm:text-3xl md:text-4xl">
         <DownLeftArrow className="inline-block w-6 h-6 md:w-8 md:h-8 mb-1 md:mb-2" />
         <span className="block">Autodidact</span>
         <span className="block">Yet another developer</span>

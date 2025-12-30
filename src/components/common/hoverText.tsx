@@ -1,43 +1,43 @@
 import React from "react";
 
-interface HoverTextProps {
+export interface HoverTextProps {
+  title?: string;
   label: string;
-  subText?: string;
   href?: string;
   onClick?: () => void;
   className?: string;
 }
 
 const HoverText: React.FC<HoverTextProps> = ({
+  title,
   label,
-  subText,
   href,
   onClick,
   className = "",
 }) => {
-  const isLink = typeof href === "string";
-  const Wrapper: React.ElementType = isLink ? "a" : "button";
+  const Wrapper: React.ElementType = href ? "a" : "button";
 
   return (
-    <div className={`group block cursor-pointer ${className}`}>
-      {subText && (
-        <p className="">
-          {subText}
-        </p>
-      )}
+    <div className={`group inline-flex ${className}`}>
+      <div className="flex flex-col">
+        {/* Title ALWAYS above */}
+        {title && <span>{title}</span>}
 
-      <Wrapper
-        {...(isLink ? { href } : { onClick })}
-        className="relative inline-block"
-      >
-        {label}
+        {/* Clickable label */}
+        <Wrapper
+          href={href}
+          onClick={onClick}
+          className="inline-flex flex-col focus:outline-none"
+        >
+          <span>{label}</span>
 
-        {/* Underline base */}
-        <span className="block w-full h-[1.5px] bg-gray-400 mt-1 group-hover:bg-gray-800 transition-all duration-300" />
-
-        {/* Animated underline */}
-        <span className="absolute bottom-0 left-0 w-full h-[1.5px] bg-gray-800 scale-x-0 group-hover:scale-x-100 transform transition-transform duration-300 origin-left" />
-      </Wrapper>
+          {/* Underline */}
+          <span className="relative mt-1 h-0.5 w-full overflow-hidden">
+            <span className="absolute inset-0 bg-neutral-400" />
+            <span className="absolute inset-0 bg-neutral-700 scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100" />
+          </span>
+        </Wrapper>
+      </div>
     </div>
   );
 };

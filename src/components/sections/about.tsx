@@ -5,7 +5,7 @@ export default function About() {
     <section className="bg-white md:h-screen md:flex md:items-center md:justify-center">
       <div className="py-12 md:py-20 lg:py-28">
         {/* Heading */}
-        <h2 className="text-4xl md:text-5xl font-medium tracking-tight mb-6 md:mb-8">
+        <h2 className="text-4xl md:text-5xl lg:text-7xl font-medium tracking-tight mb-6 md:mb-8">
           ABOUT
         </h2>
 
@@ -28,7 +28,7 @@ export default function About() {
               <HoverText
                 href="mailto:shuvo.sarkar.official@gmail.com"
                 label="shuvo.sarkar.official@gmail.com"
-                subText="Say hello or anything"
+                title="Say hello or anything"
                 className="hidden md:block"
               />
 
@@ -45,7 +45,7 @@ export default function About() {
           <div className="lg:col-span-5 h-full">
             <div className="prose prose-sm max-w-none">
               <p className="mb-6">
-                Self-taught software engineer with a strong knowledge of TypeScript, Swift, and Java. I am passionate about working on meaningful projects that have a positive impact on people's lives.
+                Self-taught software engineer with a strong knowledge of TypeScript, Swift, and Java. I am passionate about working on meaningful projects that have a positive impact on people&apos;s lives.
               </p>
 
               <p className="mb-6">
@@ -72,14 +72,14 @@ export default function About() {
             <HoverText
               href="mailto:shuvo.sarkar.official@gmail.com"
               label="shuvo.sarkar.official@gmail.com"
-              subText="Say hello or anything"
-              className="block"
+              title="Say hello or anything"
+              className="self-end text-right"
             />
 
             <HoverText
               href="#"
               label="Explore LinkedIn ↗"
-              className="block"
+              className="self-end text-right"
             />
           </div>
         </div>

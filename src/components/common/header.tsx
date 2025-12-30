@@ -6,29 +6,29 @@ export default function Header() {
   const [open, setOpen] = useState(false)
 
   return (
-    <header className="py-6 relative">
+    <header className="relative">
       <div className="flex items-center justify-between">
         
         {/* Left info section */}
-        <div className="flex flex-col md:flex-row md:space-x-12">
+        <div className="flex flex-col md:flex-row md:space-x-20 lg:space-x-40">
           <div>
             <p>Based in</p>
             <p>Dhaka, Bangladesh</p>
           </div>
 
-          <HoverText
-            href="mailto:shuvo.sarkar.official@gmail.com"
-            label="shuvo.sarkar.official@gmail.com"
-            subText="Say hello or anything"
-            className="hidden md:block"
-          />
+          <div className="hidden md:flex md:space-x-20 lg:space-x-40">
+            <HoverText
+              href="mailto:shuvo.sarkar.official@gmail.com"
+              label="shuvo.sarkar.official@gmail.com"
+              title="Say hello or anything"
+            />
 
-          <HoverText
-            subText="Switch to"
-            label="Comfort mode"
-            onClick={() => console.log("Switched to comfort mode")}
-            className="hidden md:block"
-          />
+            <HoverText
+              title="Switch to"
+              label="Comfort mode"
+              onClick={() => console.log("Switched to comfort mode")}
+            />
+          </div>  
         </div>
 
         {/* Desktop Navigation (hidden on mobile) */}
@@ -50,10 +50,11 @@ export default function Header() {
 
       {/* Mobile Full Screen Menu */}
       {open && (
-        <div className="fixed inset-0 bg-white z-50 flex flex-col p-7">
+        <div className="fixed inset-0 z-50 bg-white flex flex-col px-7 py-7 overflow-hidden">
 
+          {/* Close button */}
           <div className="flex justify-end">
-            <button 
+            <button
               className="font-medium underline underline-offset-4"
               onClick={() => setOpen(false)}
             >
@@ -61,26 +62,28 @@ export default function Header() {
             </button>
           </div>
 
-          <div className="mt-16 flex flex-col space-y-10 text-3xl font-medium">
+          {/* Navigation */}
+          <div className="mt-16 flex flex-col space-y-8 text-4xl font-medium">
             <a onClick={() => setOpen(false)} href="#about">ABOUT</a>
             <a onClick={() => setOpen(false)} href="#experience">EXPERIENCE</a>
             <a onClick={() => setOpen(false)} href="#projects">PROJECTS</a>
             <a onClick={() => setOpen(false)} href="#contact">CONTACT</a>
           </div>
 
-          {/* Bottom section inside menu */}
-          <div className="absolute right-7 bottom-10 w-[90%] text-right flex flex-col gap-4">
-            <HoverText 
+          {/* Bottom section */}
+          <div className="mt-auto w-full max-w-full flex flex-col items-end gap-4 text-right">
+            <HoverText
               label="shuvo.sarkar.official@gmail.com"
-              subText="Say hello"
+              title="Say hello"
               href="mailto:shuvo.sarkar.official@gmail.com"
             />
-            <HoverText 
-              subText="Switch to"
+            <HoverText
+              title="Switch to"
               label="Comfort Mode"
               onClick={() => console.log("Switched!")}
             />
           </div>
+
         </div>
       )}
     </header>

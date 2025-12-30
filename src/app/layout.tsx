@@ -12,7 +12,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={supreme.variable}>
       <body className="font-sans antialiased">
-        <main className="page-wrapper">
+        <main className="page-wrapper leading-relaxed">
           {children}
           <Footer />
         </main>
