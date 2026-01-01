@@ -34,7 +34,7 @@ export default function About() {
 
               <HoverText
                 href="#"
-                label="Explore LinkedIn ↗"
+                label="Explore LinkedIn 🡭"
                 className="hidden md:block"
               />
             </div>

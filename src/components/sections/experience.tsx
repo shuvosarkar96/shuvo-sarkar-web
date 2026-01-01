@@ -52,13 +52,13 @@ export default function About() {
 
             {/* Description */}
             <div className="lg:col-span-5 prose prose-sm max-w-none">
-              <p className="mb-8">
+              <p>
                 As a member of the Frontend Foundations team working on the Online Bank,
                 I develop customer-facing features and integrate the design system to
                 ensure a seamless and accessible user experience.
               </p>
 
-              <p>
+              <p className="mt-6">
                 Starling Bank is an award-winning, digital challenger bank disrupting
                 the financial services industry with its transparent and customer-focused
                 approach to banking.
