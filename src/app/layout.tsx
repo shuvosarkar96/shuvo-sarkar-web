@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Footer from "@/components/common/footer";
 import { supreme } from "./fonts";
+import { ThemeProvider } from "next-themes";
 
 export const metadata: Metadata = {
   title: "Shuvo Sarkar",
@@ -10,12 +11,14 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={supreme.variable}>
-      <body className="font-sans antialiased">
-        <main className="page-wrapper leading-relaxed">
-          {children}
+    <html lang="en" className={supreme.variable} suppressHydrationWarning>
+      <body className="page-wrapper leading-relaxed font-sans antialiased">
+        <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
+          <main>
+            {children}
+          </main>
           <Footer />
-        </main>
+        </ThemeProvider>
       </body>
     </html>
   );
