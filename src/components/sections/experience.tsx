@@ -14,59 +14,60 @@ export default function About() {
         <article className="">
           <h3 className="text-2xl md:text-4xl lg:text-5xl font-medium mb-4 md:mb-8">PulseTech Ltd.</h3>
 
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-24 items-start">
-            {/* Company / year */}
-            <div className="lg:col-span-4 flex flex-col gap-2">
-              <p className="">
-                Transforming healthcare with innovation
-              </p>
-              <p className="">2024 — 2025</p>
+          <div className="flex flex-col md:grid md:grid-cols-2 lg:block gap-8 md:gap-4">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 xl:gap-16 2xl:gap-20 items-start">
+              {/* Company / year */}
+              <div className="lg:col-span-3 xl:col-span-3 flex flex-col gap-2">
+                <p className="">
+                  Transforming healthcare with innovation
+                </p>
+                <p className="">2024 — 2025</p>
+              </div>
+
+              {/* Info - Desktop */}
+              <dl className="hidden lg:flex lg:col-span-4 xl:col-span-4 flex-col gap-2">
+                <div className="flex flex-row justify-between">
+                  <dt className="text-neutral-600">Position</dt>
+                  <dd className="">Jr. Software Engineer</dd>
+                </div>
+
+                <div className="flex flex-row justify-between">
+                  <dt className="text-neutral-600">Location</dt>
+                  <dd className="">Dhaka, Bangladesh</dd>
+                </div>
+
+                <div className="flex flex-row justify-between">
+                  <dt className="text-neutral-600">Industry</dt>
+                  <dd className="">Healthcare</dd>
+                </div>
+
+                <div className="flex flex-row justify-between">
+                  <dt className="text-neutral-600">Website</dt>
+                  <HoverText
+                    href="https://pulsetechltd.com/"
+                    label="www.pulsetechltd.com"
+                    className="hidden md:block"
+                  />
+                </div>
+              </dl>
+
+              {/* Description */}
+              <div className="lg:col-span-5 xl:col-span-5 prose prose-sm max-w-none">
+                <p>
+                  As a member of the Frontend Foundations team working on the Online Bank,
+                  I develop customer-facing features and integrate the design system to
+                  ensure a seamless and accessible user experience.
+                </p>
+
+                <p className="mt-6">
+                  Starling Bank is an award-winning, digital challenger bank disrupting
+                  the financial services industry with its transparent and customer-focused
+                  approach to banking.
+                </p>
+              </div>
             </div>
-
-            {/* Info - Desktop */}
-            <dl className="hidden md:flex lg:col-span-3 flex-col gap-2">
-              <div className="flex flex-row justify-between">
-                <dt className="text-neutral-600">Position</dt>
-                <dd className="">Jr. Software Engineer</dd>
-              </div>
-
-              <div className="flex flex-row justify-between">
-                <dt className="text-neutral-600">Location</dt>
-                <dd className="">Dhaka, Bangladesh</dd>
-              </div>
-
-              <div className="flex flex-row justify-between">
-                <dt className="text-neutral-600">Industry</dt>
-                <dd className="">Healthcare</dd>
-              </div>
-
-              <div className="flex flex-row justify-between">
-                <dt className="text-neutral-600">Website</dt>
-                <HoverText
-                  href="https://pulsetechltd.com/"
-                  label="www.pulsetechltd.com"
-                  className="hidden md:block"
-                />
-              </div>
-            </dl>
-
-            {/* Description */}
-            <div className="lg:col-span-5 prose prose-sm max-w-none">
-              <p>
-                As a member of the Frontend Foundations team working on the Online Bank,
-                I develop customer-facing features and integrate the design system to
-                ensure a seamless and accessible user experience.
-              </p>
-
-              <p className="mt-6">
-                Starling Bank is an award-winning, digital challenger bank disrupting
-                the financial services industry with its transparent and customer-focused
-                approach to banking.
-              </p>
-            </div>
-
-            {/* Info - Desktop */}
-            <dl className="flex md:hidden lg:col-span-3 flex-col gap-2">
+            {/* Info - Mobile */}
+            <dl className="flex lg:hidden lg:col-span-3 flex-col gap-2">
               <div className="flex flex-row justify-between">
                 <dt className="text-neutral-600">Position</dt>
                 <dd className="">Jr. Software Engineer</dd>
