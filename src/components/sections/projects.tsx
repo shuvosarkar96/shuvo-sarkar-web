@@ -12,8 +12,8 @@ export default function Projects() {
 
         <hr className="border-2 border-gray-200 mb-12" />
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-24 items-start">
-        
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-24 lg:gap-16 items-start">
+          
           {/* Left content */}
           <div className="lg:col-span-5">
             <h3 className="text-2xl font-medium">
@@ -28,8 +28,8 @@ export default function Projects() {
               2024
             </p>
 
-            {/* Mobile view image frame */}
-            <div className="lg:hidden mt-6 full-bleed">
+            {/* Mobile-only full bleed image */}
+            <div className="md:block lg:hidden mt-6 full-bleed md:mx-0 md:w-auto">
               <ImageFrame 
                 images={[
                   "/images/projects/image.png",
@@ -62,7 +62,7 @@ export default function Projects() {
             />
           </div>
 
-          {/* Right image frame */}
+          {/* Right image frame (LG+) */}
           <div className="hidden lg:block lg:col-span-7">
             <ImageFrame 
               images={[

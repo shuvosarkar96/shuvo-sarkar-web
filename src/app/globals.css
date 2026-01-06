@@ -47,6 +47,13 @@ code {
   margin-right: calc(50% - 50vw);
 }
 
+@media (min-width: 1024px) {
+  .full-bleed {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
 .hero-title {
   font-weight: 600;
   line-height: 0.95;
