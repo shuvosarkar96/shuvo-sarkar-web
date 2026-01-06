@@ -6,7 +6,7 @@ export default function Footer() {
 
       <hr className="border-2 border-gray-200 mt-16 mb-24" />
 
-      <div className="flex flex-col lg:flex-row lg:items-center justify-between">
+      <div className="flex flex-col gap-4 lg:flex-row lg:items-center justify-between">
         <h2 className="text-4xl md:text-7xl lg:text-8xl font-medium tracking-tight">Let&apos;s Team Up</h2>
         <HoverText
           href="mailto:shuvo.sarkar.official@gmail.com"
@@ -15,7 +15,7 @@ export default function Footer() {
         />
       </div>
 
-      <div className="flex flex-col md:flex-row md:items-center justify-between mt-24 mb-2 md:mb-12">
+      <div className="flex flex-col md:flex-row md:items-center justify-between mt-20 md:mt-24 mb-2 md:mb-12">
 
         {/* Social — FIRST on mobile, SECOND on md */}
         <div className="order-1 md:order-2 w-full md:w-fit flex justify-between md:justify-start md:gap-8">
