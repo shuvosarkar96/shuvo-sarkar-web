@@ -4,4 +4,7 @@ export const typography = {
 
   sectionTitle:
     "text-4xl md:text-5xl lg:text-7xl font-medium tracking-tight text-gray-800",
+
+  footerDisplay:
+    "text-4xl md:text-7xl lg:text-7xl xl:text-8xl font-medium tracking-tight",
 };
