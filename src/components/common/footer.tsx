@@ -3,7 +3,7 @@ import HoverText from "./hoverText";
 
 export default function Footer() {
   return (
-    <footer id="contact">
+    <footer id="contact" className="mb-10">
 
       <hr className="border-2 border-gray-200 mt-16 mb-24" />
 
