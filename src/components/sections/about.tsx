@@ -2,7 +2,7 @@ import HoverText from "../common/hoverText";
 
 export default function About() {
   return (
-    <section className="md:h-screen md:flex md:items-center md:justify-center">
+    <section id="about" className="md:h-screen md:flex md:items-center md:justify-center">
       <div className="py-12 md:py-20 lg:py-28">
         {/* Heading */}
         <h2 className="text-4xl md:text-5xl lg:text-7xl font-medium tracking-tight mb-6 md:mb-8">
@@ -34,7 +34,7 @@ export default function About() {
                 />
 
                 <HoverText
-                  href="#"
+                  href="https://www.linkedin.com/in/shuvosarkarofficial"
                   label="Explore LinkedIn 🡭"
                   className="hidden md:block"
                 />
@@ -80,9 +80,10 @@ export default function About() {
             />
 
             <HoverText
-              href="#"
+              href="https://www.linkedin.com/in/shuvosarkarofficial"
               label="Explore LinkedIn ↗"
               className="self-end text-right"
+              openInNewTab
             />
           </div>
         </div>

@@ -3,7 +3,7 @@ import HoverText from "./hoverText";
 
 export default function Footer() {
   return (
-    <footer className="">
+    <footer id="contact">
 
       <hr className="border-2 border-gray-200 mt-16 mb-24" />
 
@@ -20,9 +20,26 @@ export default function Footer() {
 
         {/* Social — FIRST on mobile, SECOND on md */}
         <div className="order-1 md:order-2 w-full md:w-fit flex justify-between md:justify-start md:gap-8">
-          <HoverText href="#" label="GitHub 🡭" className="hidden md:block" />
-          <HoverText href="#" label="LinkedIn 🡭" className="hidden md:block" />
-          <HoverText href="#" label="Instagram 🡭" className="hidden md:block" />
+          <HoverText 
+            href="https://github.com/shuvosarkar96" 
+            label="GitHub 🡭" 
+            className="hidden md:block"
+            openInNewTab
+          />
+
+          <HoverText 
+            href="https://www.linkedin.com/in/shuvosarkarofficial" 
+            label="LinkedIn 🡭" 
+            className="hidden md:block"
+            openInNewTab
+          />
+
+          <HoverText 
+            href="https://www.instagram.com/mr.shuvo.sarkar?igsh=MTF1MXBidTE1amh6Mg==" 
+            label="Instagram 🡭" 
+            className="hidden md:block"
+            openInNewTab
+          />
         </div>
 
         {/* Copyright — SECOND on mobile, FIRST on md */}

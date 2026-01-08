@@ -4,7 +4,7 @@ import { typography } from "@/app/typography";
 
 export default function Hero() {
   return (
-    <section className="h-screen flex flex-col py-8 lg:py-10">
+    <section id="top" className="min-h-svh flex flex-col pt-8 pb-16 lg:pt-10 lg:pb-10">
 
       <Header />
 

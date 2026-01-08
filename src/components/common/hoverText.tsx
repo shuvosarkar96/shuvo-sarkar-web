@@ -6,6 +6,7 @@ export interface HoverTextProps {
   href?: string;
   onClick?: () => void;
   className?: string;
+  openInNewTab?: boolean;
 }
 
 const HoverText: React.FC<HoverTextProps> = ({
@@ -14,6 +15,7 @@ const HoverText: React.FC<HoverTextProps> = ({
   href,
   onClick,
   className = "",
+  openInNewTab = false,
 }) => {
   const Wrapper: React.ElementType = href ? "a" : "button";
 
@@ -27,6 +29,8 @@ const HoverText: React.FC<HoverTextProps> = ({
         <Wrapper
           href={href}
           onClick={onClick}
+          target={href && openInNewTab ? "_blank" : undefined}
+          rel={href && openInNewTab ? "noopener noreferrer" : undefined}
           className="inline-flex flex-col focus:outline-none"
         >
           <span>{label}</span>
