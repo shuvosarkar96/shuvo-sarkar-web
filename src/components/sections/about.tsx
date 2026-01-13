@@ -9,14 +9,14 @@ export default function About() {
           ABOUT
         </h2>
 
-        <hr className="border-2 border-gray-200 mb-12" />
+        <hr className="border-2 border-gray-200 mb-12 md:mb-20" />
 
         {/* Desktop: grid with two columns; Mobile: stacked */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start md:auto-rows-fr">
           {/* Left large lead text */}
           <div className="md:col-span-7 h-full flex flex-col justify-between">
             <p className="text-2xl sm:text-3xl lg:text-4xl font-medium text-gray-800 leading-tight lg:leading-snug">
-              Over the years, I have worked on customer-facing products with a strong focus on excellent user experience and accessibility
+              I design and develop web applications that feel intuitive to use, with a focus on accessibility and real-world performance.
             </p>
 
             <div className="hidden md:flex flex-col lg:flex-row gap-8 lg:gap-2 xl:gap-16">
@@ -48,19 +48,19 @@ export default function About() {
           <div className="md:col-span-5 h-full">
             <div className="prose prose-sm max-w-none">
               <p className="mb-6">
-                Self-taught software engineer with a strong knowledge of TypeScript, Swift, and Java. I am passionate about working on meaningful projects that have a positive impact on people&apos;s lives.
+                Self-taught frontend developer and UI/UX designer specializing in JavaScript, TypeScript, React, Next.js, and Angular. I&apos;m passionate about building digital products that solve real problems and make people&apos;s lives easier.
               </p>
 
               <p className="mb-6">
-                I have hands-on experience working on high-traffic, customer-facing products and prioritize building clean, maintainable codebases that enable continuous improvement and scalability.
+                I&apos;ve worked on various customer-facing platforms, always focusing on intuitive design and smooth performance. I approach every project by understanding user needs first, then translating that into clean, accessible interfaces.
               </p>
 
               <p className="mb-6">
-                I hold a Bachelor of Business Administration from Hult International Business School in London and an International Baccalaureate from Leysin American School in Switzerland.
+                My bachelor&apos;s was in Business Administration, but I fell into coding and haven&apos;t looked back. Now I&apos;m doing my Master&apos;s in Software Convergence in South Korea.
               </p>
 
               <p className="mb-0">
-                I am fluent in English and Russian and have experience working and studying in an international environment.
+                I&apos;m fluent in English and Bengali, and learning Korean. Working with people from different backgrounds keeps me growing—I always look forward to learning.
               </p>
             </div>
           </div>
