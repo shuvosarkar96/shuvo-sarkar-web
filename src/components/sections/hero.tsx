@@ -1,5 +1,5 @@
 import Header from "@/components/common/header";
-import DownLeftArrow from "@/assets/icons/down-left-arrow.svg";
+import { ReactComponent as DownLeftArrow } from "@/assets/icons/down-left-arrow.svg";
 import { typography } from "@/app/typography";
 
 export default function Hero() {
