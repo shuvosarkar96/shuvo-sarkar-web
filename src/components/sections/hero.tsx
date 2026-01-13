@@ -1,6 +1,8 @@
+"use client";
+
 import Header from "@/components/common/header";
-import { ReactComponent as DownLeftArrow } from "@/assets/icons/down-left-arrow.svg";
 import { typography } from "@/app/typography";
+import DownLeftArrow from "@/assets/icons/DownLeftArrow";
 
 export default function Hero() {
   return (
