@@ -1,3 +1,6 @@
+"use client";
+
+import ArrowTopRight from "@/assets/icons/ArrowTopRight";
 import HoverText from "../common/hoverText";
 
 export default function About() {
@@ -15,9 +18,9 @@ export default function About() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start md:auto-rows-fr">
           {/* Left large lead text */}
           <div className="md:col-span-7 h-full flex flex-col justify-between">
-            <p className="text-2xl sm:text-3xl lg:text-4xl font-medium text-gray-800 leading-tight lg:leading-snug">
+            <h3 className="text-2xl sm:text-3xl lg:text-4xl font-medium leading-tight lg:leading-snug">
               I design and develop web applications that feel intuitive to use, with a focus on accessibility and real-world performance.
-            </p>
+            </h3>
 
             <div className="hidden md:flex flex-col lg:flex-row gap-8 lg:gap-2 xl:gap-16">
               <ul className="flex flex-col gap-1">
@@ -35,8 +38,13 @@ export default function About() {
 
                 <HoverText
                   href="https://www.linkedin.com/in/shuvosarkarofficial"
-                  label="Explore LinkedIn 🡭"
                   className="hidden md:block"
+                  label={
+                    <span className="flex items-center gap-1">
+                      Explore LinkedIn
+                      <ArrowTopRight className="w-4 h-4" />
+                    </span>
+                  }
                 />
               </div>
 
@@ -81,7 +89,12 @@ export default function About() {
 
             <HoverText
               href="https://www.linkedin.com/in/shuvosarkarofficial"
-              label="Explore LinkedIn ↗"
+              label={
+                <span className="flex items-center gap-1">
+                  Explore LinkedIn
+                  <ArrowTopRight className="w-4 h-4" />
+                </span>
+              }
               className="self-end text-right"
               openInNewTab
             />

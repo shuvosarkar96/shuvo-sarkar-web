@@ -45,22 +45,22 @@ export default function ExperienceItem({
           {/* Info - Desktop */}
           <dl className="hidden lg:flex lg:col-span-4 xl:col-span-4 flex-col gap-2">
             <div className="flex flex-row justify-between">
-              <dt className="text-neutral-600">Position</dt>
+              <dt>Position</dt>
               <dd>{position}</dd>
             </div>
 
             <div className="flex flex-row justify-between">
-              <dt className="text-neutral-600">Location</dt>
+              <dt>Location</dt>
               <dd>{location}</dd>
             </div>
 
             <div className="flex flex-row justify-between">
-              <dt className="text-neutral-600">Industry</dt>
+              <dt>Industry</dt>
               <dd>{industry}</dd>
             </div>
 
             <div className="flex flex-row justify-between">
-              <dt className="text-neutral-600">Website</dt>
+              <dt>Website</dt>
               <HoverText
                 href={website.href}
                 label={website.label}
@@ -83,22 +83,22 @@ export default function ExperienceItem({
         {/* Info - Mobile */}
         <dl className="flex lg:hidden lg:col-span-3 flex-col gap-2">
           <div className="flex flex-row justify-between">
-            <dt className="text-neutral-600">Position</dt>
+            <dt>Position</dt>
             <dd>{position}</dd>
           </div>
 
           <div className="flex flex-row justify-between">
-            <dt className="text-neutral-600">Location</dt>
+            <dt>Location</dt>
             <dd>{location}</dd>
           </div>
 
           <div className="flex flex-row justify-between">
-            <dt className="text-neutral-600">Industry</dt>
+            <dt>Industry</dt>
             <dd>{industry}</dd>
           </div>
 
           <div className="flex flex-row justify-between">
-            <dt className="text-neutral-600">Website</dt>
+            <dt>Website</dt>
             <HoverText
               href={website.href}
               label={website.label}

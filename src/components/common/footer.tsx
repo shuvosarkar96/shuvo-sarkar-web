@@ -1,5 +1,6 @@
 import { typography } from "@/app/typography";
 import HoverText from "./hoverText";
+import ArrowTopRight from "@/assets/icons/ArrowTopRight";
 
 export default function Footer() {
   return (
@@ -22,21 +23,36 @@ export default function Footer() {
         <div className="order-1 md:order-2 w-full md:w-fit flex justify-between md:justify-start md:gap-8">
           <HoverText 
             href="https://github.com/shuvosarkar96" 
-            label="GitHub 🡭" 
+            label={
+              <span className="flex items-center gap-1">
+                GitHub
+                <ArrowTopRight className="w-4 h-4" />
+              </span>
+            }
             className="hidden md:block"
             openInNewTab
           />
 
           <HoverText 
             href="https://www.linkedin.com/in/shuvosarkarofficial" 
-            label="LinkedIn 🡭" 
+            label={
+              <span className="flex items-center gap-1">
+                LinkedIn
+                <ArrowTopRight className="w-4 h-4" />
+              </span>
+            }
             className="hidden md:block"
             openInNewTab
           />
 
           <HoverText 
             href="https://www.instagram.com/mr.shuvo.sarkar?igsh=MTF1MXBidTE1amh6Mg==" 
-            label="Instagram 🡭" 
+            label={
+              <span className="flex items-center gap-1">
+                Instagram
+                <ArrowTopRight className="w-4 h-4" />
+              </span>
+            }
             className="hidden md:block"
             openInNewTab
           />

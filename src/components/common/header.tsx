@@ -1,14 +1,16 @@
-"use client"
-import { useState } from "react"
-import HoverText from "./hoverText"
+"use client";
+
+import { useState } from "react";
+import { useTheme } from "next-themes";
+import HoverText from "./hoverText";
 
 export default function Header() {
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(false);
+  const { theme } = useTheme();
 
   return (
     <header className="relative">
       <div className="flex items-start justify-between">
-        
         {/* Left info section */}
         <div className="flex flex-col md:flex-row md:space-x-20 lg:space-x-8 xl:space-x-40">
           <div>
@@ -24,15 +26,14 @@ export default function Header() {
             />
 
             <HoverText
-              href="#"
               title="Switch to"
-              label="Comfort mode"
-              onClick={() => console.log("Switched to comfort mode")}
+              toggleTheme
+              label="Comfort Mode"
             />
-          </div>  
+          </div>
         </div>
 
-        {/* Desktop Navigation (hidden on mobile) */}
+        {/* Desktop Navigation */}
         <nav className="hidden lg:flex space-x-4 xl:space-x-8">
           <a href="#about" className="hover:text-black transition">ABOUT</a>
           <a href="#experience" className="hover:text-black transition">EXPERIENCE</a>
@@ -51,8 +52,12 @@ export default function Header() {
 
       {/* Mobile Full Screen Menu */}
       {open && (
-        <div className="fixed inset-0 z-50 bg-white flex flex-col px-7 py-7 overflow-hidden">
-
+        <div
+          key={theme}
+          className={`fixed inset-0 z-50 flex flex-col px-7 py-7 overflow-hidden ${
+            theme === "dark" ? "bg-black text-gray-100" : "bg-white text-gray-900"
+          }`}
+        >
           {/* Close button */}
           <div className="flex justify-end">
             <button
@@ -64,7 +69,6 @@ export default function Header() {
           </div>
 
           <div className="flex flex-col justify-between md:flex-row md:justify-between md:items-start md:px-20 h-full">
-
             {/* Navigation */}
             <div className="mt-16 flex flex-col space-y-8 md:space-y-16 text-4xl font-medium">
               <a onClick={() => setOpen(false)} href="#about">ABOUT</a>
@@ -82,15 +86,14 @@ export default function Header() {
               />
               <HoverText
                 title="Switch to"
+                toggleTheme
                 label="Comfort Mode"
-                onClick={() => console.log("Switched!")}
+                onClick={() => setOpen(false)}
               />
             </div>
-
           </div>
-
         </div>
       )}
     </header>
-  )
+  );
 }

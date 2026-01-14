@@ -1,3 +1,4 @@
+import ArrowTopRight from "@/assets/icons/ArrowTopRight";
 import HoverText from "../common/hoverText";
 import ImageFrame from "../common/imageFrame";
 
@@ -20,7 +21,8 @@ export default function Projects() {
             <div className="hidden lg:block lg:col-span-7">
               <ImageFrame 
                 images={[
-                  "/images/projects/ptl.png"
+                  "/images/projects/ptl.png",
+                  "/images/projects/ptl-figma.png"
                 ]}
               />
             </div>
@@ -28,7 +30,7 @@ export default function Projects() {
             {/* Left content */}
             <div className="lg:col-span-5">
               <h3 className="text-2xl font-medium">
-                Compound Interest Calculator
+                PulseTech Ltd.
               </h3>
 
               <p className="mt-2">
@@ -43,7 +45,8 @@ export default function Projects() {
               <div className="md:block lg:hidden mt-6 full-bleed md:mx-0 md:w-auto">
                 <ImageFrame 
                   images={[
-                    "/images/projects/ptl.png"
+                    "/images/projects/ptl.png",
+                    "/images/projects/ptl-figma.png"
                   ]}
                 />
               </div>
@@ -64,7 +67,12 @@ export default function Projects() {
 
               <HoverText
                 href="https://pulsetechltd.com/"
-                label="www.pulsetechltd.com 🡭"
+                label={
+                  <span className="flex items-center gap-1">
+                    www.pulsetechltd.com
+                    <ArrowTopRight className="w-4 h-4" />
+                  </span>
+                }
                 className="hidden md:block md:w-fit mt-6"
               />
             </div>
@@ -114,7 +122,12 @@ export default function Projects() {
 
               <HoverText
                 href="https://nirbazar.com/all-products"
-                label="www.nirbazar.com 🡭"
+                label={
+                  <span className="flex items-center gap-1">
+                    www.nirbazar.com
+                    <ArrowTopRight className="w-4 h-4" />
+                  </span>
+                }
                 className="hidden md:block md:w-fit mt-6"
                 openInNewTab
               />
