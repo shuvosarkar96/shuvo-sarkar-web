@@ -33,11 +33,11 @@ export default function Projects() {
                 PulseTech Ltd.
               </h3>
 
-              <p className="mt-2">
+              <p className="mt-2 font-medium">
                 Web Development, Design, Idea
               </p>
 
-              <p className="mt-2">
+              <p className="mt-2 font-medium">
                 2024
               </p>
 
@@ -73,7 +73,7 @@ export default function Projects() {
                     <ArrowTopRight className="w-4 h-4" />
                   </span>
                 }
-                className="hidden md:block md:w-fit mt-6"
+                className="hidden md:block md:w-fit mt-6 font-medium"
               />
             </div>
 
@@ -88,11 +88,11 @@ export default function Projects() {
                 NirBazar - Local B2C Marketplace
               </h3>
 
-              <p className="mt-2">
+              <p className="mt-2 font-medium">
                 Web Development, Design
               </p>
 
-              <p className="mt-2">
+              <p className="mt-2 font-medium">
                 2024
               </p>
 
@@ -128,7 +128,7 @@ export default function Projects() {
                     <ArrowTopRight className="w-4 h-4" />
                   </span>
                 }
-                className="hidden md:block md:w-fit mt-6"
+                className="hidden md:block md:w-fit mt-6 font-medium"
                 openInNewTab
               />
             </div>

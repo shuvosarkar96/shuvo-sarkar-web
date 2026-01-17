@@ -22,7 +22,7 @@ export default function About() {
               I design and develop web applications that feel intuitive to use, with a focus on accessibility and real-world performance.
             </h3>
 
-            <div className="hidden md:flex flex-col lg:flex-row gap-8 lg:gap-2 xl:gap-16">
+            <div className="hidden md:flex flex-col lg:flex-row gap-8 lg:gap-2 xl:gap-16 font-medium">
               <ul className="flex flex-col gap-1">
                 <li>Frontend Development</li>
                 <li>UI / UX Design</li>
@@ -74,7 +74,7 @@ export default function About() {
           </div>
 
           {/* Mobile only visible */}
-          <div className="flex flex-col gap-2 text-right md:hidden">
+          <div className="flex flex-col gap-2 text-right font-medium md:hidden">
             <ul className="flex flex-col">
               <li>Frontend Development</li>
               <li>UI / UX Design</li>

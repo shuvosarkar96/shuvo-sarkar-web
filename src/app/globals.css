@@ -47,11 +47,3 @@ code {
   }
 }
 
-.hero-title {
-  font-weight: 600;
-  line-height: 0.95;
-  letter-spacing: -0.025em;
-  font-size: clamp(5rem, 9vw, 12rem);
-  text-transform: uppercase;
-  line-height: 1;
-}

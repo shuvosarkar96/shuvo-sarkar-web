@@ -37,26 +37,26 @@ export default function ExperienceItem({
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 xl:gap-16 2xl:gap-20 items-start">
           
           {/* Company / year */}
-          <div className="lg:col-span-3 xl:col-span-3 flex flex-col gap-2">
+          <div className="lg:col-span-3 xl:col-span-3 flex flex-col gap-4 font-medium">
             <p>{companyTagline}</p>
             <p>{period}</p>
           </div>
 
           {/* Info - Desktop */}
-          <dl className="hidden lg:flex lg:col-span-4 xl:col-span-4 flex-col gap-2">
+          <dl className="hidden lg:flex lg:col-span-4 xl:col-span-4 flex-col gap-4">
             <div className="flex flex-row justify-between">
               <dt>Position</dt>
-              <dd>{position}</dd>
+              <dd className="font-medium">{position}</dd>
             </div>
 
             <div className="flex flex-row justify-between">
               <dt>Location</dt>
-              <dd>{location}</dd>
+              <dd className="font-medium">{location}</dd>
             </div>
 
             <div className="flex flex-row justify-between">
               <dt>Industry</dt>
-              <dd>{industry}</dd>
+              <dd className="font-medium">{industry}</dd>
             </div>
 
             <div className="flex flex-row justify-between">
@@ -64,7 +64,7 @@ export default function ExperienceItem({
               <HoverText
                 href={website.href}
                 label={website.label}
-                className="hidden md:block"
+                className="hidden md:block font-medium"
                 openInNewTab
               />
             </div>
@@ -84,17 +84,17 @@ export default function ExperienceItem({
         <dl className="flex lg:hidden lg:col-span-3 flex-col gap-2">
           <div className="flex flex-row justify-between">
             <dt>Position</dt>
-            <dd>{position}</dd>
+            <dd className="font-medium">{position}</dd>
           </div>
 
           <div className="flex flex-row justify-between">
             <dt>Location</dt>
-            <dd>{location}</dd>
+            <dd className="font-medium">{location}</dd>
           </div>
 
           <div className="flex flex-row justify-between">
             <dt>Industry</dt>
-            <dd>{industry}</dd>
+            <dd className="font-medium">{industry}</dd>
           </div>
 
           <div className="flex flex-row justify-between">
@@ -102,7 +102,7 @@ export default function ExperienceItem({
             <HoverText
               href={website.href}
               label={website.label}
-              className="hidden md:block"
+              className="hidden md:block font-medium"
             />
           </div>
         </dl>

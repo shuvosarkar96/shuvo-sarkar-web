@@ -29,7 +29,7 @@ export default function Footer() {
                 <ArrowTopRight className="w-4 h-4" />
               </span>
             }
-            className="hidden md:block"
+            className="hidden md:block font-medium"
             openInNewTab
           />
 
@@ -41,7 +41,7 @@ export default function Footer() {
                 <ArrowTopRight className="w-4 h-4" />
               </span>
             }
-            className="hidden md:block"
+            className="hidden md:block font-medium"
             openInNewTab
           />
 
@@ -53,7 +53,7 @@ export default function Footer() {
                 <ArrowTopRight className="w-4 h-4" />
               </span>
             }
-            className="hidden md:block"
+            className="hidden md:block font-medium"
             openInNewTab
           />
         </div>

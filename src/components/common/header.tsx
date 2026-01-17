@@ -9,7 +9,7 @@ export default function Header() {
   const { theme } = useTheme();
 
   return (
-    <header className="relative">
+    <header className="relative font-medium">
       <div className="flex items-start justify-between">
         {/* Left info section */}
         <div className="flex flex-col md:flex-row md:space-x-20 lg:space-x-8 xl:space-x-40">

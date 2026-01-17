@@ -73,17 +73,17 @@ export default function ImageFrame({ images }: ImageFrameProps) {
             <button
               onClick={prev}
               aria-label="Previous image"
-              className="inline-flex items-center justify-center w-10 h-10 p-1 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition"
+              className="inline-flex items-center justify-center w-10 h-10 p-1 rounded-full hover:border transition"
             >
-              <ArrowLeft className="w-6 h-6 text-gray-900 dark:text-gray-100" />
+              <ArrowLeft className="w-6 h-6" />
             </button>
 
             <button
               onClick={next}
               aria-label="Next image"
-              className="inline-flex items-center justify-center w-10 h-10 p-1 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition"
+              className="inline-flex items-center justify-center w-10 h-10 p-1 rounded-full hover:border transition"
             >
-              <ArrowRight className="w-6 h-6 text-gray-900 dark:text-gray-100" />
+              <ArrowRight className="w-6 h-6" />
             </button>
           </div>
         </div>

@@ -17,7 +17,7 @@ export default function Hero() {
         </h1>
       </div>
 
-      <div className="text-right text-xl sm:text-3xl md:text-4xl">
+      <div className={typography.subTitle}>
         <DownLeftArrow className="inline-block w-6 h-6 md:w-8 md:h-8 mb-1 md:mb-2" />
         <span className="block">Autodidact</span>
         <span className="block">Yet another developer</span>

@@ -3,6 +3,7 @@ import "./globals.css";
 import Footer from "@/components/common/footer";
 import { supreme } from "./fonts";
 import { ThemeProvider } from "next-themes";
+import { typography } from "./typography";
 
 export const metadata: Metadata = {
   title: "Shuvo Sarkar",
@@ -12,7 +13,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={supreme.variable} suppressHydrationWarning>
-      <body className="page-wrapper leading-relaxed font-sans antialiased">
+      <body className={`${typography.bodyText} page-wrapper leading-relaxed font-sans antialiased`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="light"
