@@ -47,3 +47,23 @@ code {
   }
 }
 
+.hero-reveal {
+  position: relative;
+  color: transparent;
+  -webkit-text-stroke: 1px #000;
+  background: linear-gradient(to right, #000 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  animation: heroFill 1s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+}
+
+@keyframes heroFill {
+  to {
+    background-position: 0% 0;
+    -webkit-text-stroke: 0px transparent;
+    color: #000;
+  }
+}
