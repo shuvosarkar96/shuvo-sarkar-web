@@ -6,8 +6,33 @@ import { ThemeProvider } from "next-themes";
 import { typography } from "./typography";
 
 export const metadata: Metadata = {
-  title: "Shuvo Sarkar | Yet another developer",
-  description: "Autodidact front-end developer creating minimal, performance-driven web experiences with a sharp focus on typography and interaction.",
+  metadataBase: new URL("https://shuvosarkar.vercel.app"),
+
+  title: "Shuvo Sarkar | Yet another front-end developer",
+
+  description: "Autodidact front-end developer building minimal, performance-driven web experiences with a strong focus on typography, motion, and interaction design.",
+
+  openGraph: {
+    title: "Shuvo Sarkar | Yet another front-end developer",
+    description:
+      "Autodidact front-end developer building minimal, performance-driven web experiences with a strong focus on typography, motion, and interaction design.",
+    url: "https://shuvosarkar.vercel.app",
+    siteName: "Shuvo Sarkar",
+    locale: "en_US",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Shuvo Sarkar | Yet another front-end developer",
+    description:
+      "Autodidact front-end developer building minimal, performance-driven web experiences with a strong focus on typography, motion, and interaction design.",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
