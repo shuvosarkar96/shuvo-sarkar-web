@@ -4,11 +4,25 @@ import ArrowTopRight from "@/assets/icons/ArrowTopRight";
 import HoverText from "../common/hoverText";
 import ImageFrame from "../common/imageFrame";
 import { useState } from "react";
-import ArrowRight from "@/assets/icons/ArrowRight";
 
 export default function Projects() {
   const [showAll, setShowAll] = useState(false);
   const projects = [
+    {
+      title: "Campus Helper Korea",
+      category: "Web Development, Design, Idea",
+      year: "2025",
+      images: ["/images/projects/chk-1.png"],
+      description: [
+        "Campus Helper Korea is a student-focused platform I built during my first semester to simplify campus life for international students in Korea.",
+        "I identified common student challenges and structured the solution around practical, easy-to-access features.",
+        "I handled the full process—from concept and UX planning to UI design and frontend development—ensuring a clean, responsive, and user-friendly experience across devices.",
+      ],
+      link: "https://shuvosarkar96.github.io/campus-helper-korea/",
+      linkLabel: "github.io/campus-helper-korea",
+      imagePosition: "left",
+      openInNewTab: false,
+    },
     {
       title: "PulseTech Ltd.",
       category: "Web Development, Design, Idea",
@@ -44,21 +58,6 @@ export default function Projects() {
       linkLabel: "www.nirbazar.com",
       imagePosition: "left",
       openInNewTab: true,
-    },
-    {
-      title: "Campus Helper Korea",
-      category: "Web Development, Design, Idea",
-      year: "2025",
-      images: ["/images/projects/chk-1.png"],
-      description: [
-        "Campus Helper Korea is a student-focused platform I built during my first semester to simplify campus life for international students in Korea.",
-        "I identified common student challenges and structured the solution around practical, easy-to-access features.",
-        "I handled the full process—from concept and UX planning to UI design and frontend development—ensuring a clean, responsive, and user-friendly experience across devices.",
-      ],
-      link: "https://shuvosarkar96.github.io/campus-helper-korea/",
-      linkLabel: "github.io/campus-helper-korea",
-      imagePosition: "right",
-      openInNewTab: false,
     },
   ];
   const visibleProjects = showAll ? projects : projects.slice(0, 2);

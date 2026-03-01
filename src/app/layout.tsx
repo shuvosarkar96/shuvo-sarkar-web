@@ -6,8 +6,8 @@ import { ThemeProvider } from "next-themes";
 import { typography } from "./typography";
 
 export const metadata: Metadata = {
-  title: "Shuvo Sarkar",
-  description: "Yet another below average developer",
+  title: "Shuvo Sarkar | Yet another developer",
+  description: "Autodidact front-end developer creating minimal, performance-driven web experiences with a sharp focus on typography and interaction.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
