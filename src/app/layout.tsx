@@ -12,12 +12,14 @@ export const metadata: Metadata = {
 
   description: "Autodidact front-end developer building minimal, performance-driven web experiences with a strong focus on typography, motion, and interaction design.",
 
+  applicationName: "Shuvo Sarkar",
+
   openGraph: {
     title: "Shuvo Sarkar | Yet another front-end developer",
     description:
       "Autodidact front-end developer building minimal, performance-driven web experiences with a strong focus on typography, motion, and interaction design.",
-    url: "https://shuvosarkar.vercel.app",
     siteName: "Shuvo Sarkar",
+    url: "https://shuvosarkar.vercel.app",
     locale: "en_US",
     type: "website",
   },
