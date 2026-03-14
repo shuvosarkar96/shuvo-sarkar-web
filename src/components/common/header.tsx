@@ -15,7 +15,7 @@ export default function Header() {
         <div className="flex flex-col md:flex-row md:space-x-20 lg:space-x-8 xl:space-x-40">
           <div>
             <p>Based in</p>
-            <p>Gwangju, South Korea</p>
+            <p>Dhaka, Bangladesh</p>
           </div>
 
           <div className="hidden lg:flex md:space-x-20 lg:space-x-8 xl:space-x-40">
