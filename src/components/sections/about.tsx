@@ -45,6 +45,7 @@ export default function About() {
                       <ArrowTopRight className="w-4 h-4" />
                     </span>
                   }
+                  openInNewTab
                 />
               </div>
 

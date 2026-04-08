@@ -4,6 +4,7 @@ import Footer from "@/components/common/footer";
 import { supreme } from "./fonts";
 import { ThemeProvider } from "next-themes";
 import { typography } from "./typography";
+import SmoothScroll from "@/components/common/smoothScroll";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://shuvosarkar.vercel.app"),
@@ -47,6 +48,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           enableSystem={false}
         >
           <main>
+            <SmoothScroll />
             {children}
           </main>
           <Footer />

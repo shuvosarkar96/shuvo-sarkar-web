@@ -41,7 +41,6 @@ const HoverText: React.FC<HoverTextProps> = ({
         {href ? (
           <a
             href={href}
-            onClick={handleClick}
             target={openInNewTab ? "_blank" : undefined}
             rel={openInNewTab ? "noopener noreferrer" : undefined}
             className="inline-flex flex-col focus:outline-none cursor-pointer"

@@ -21,7 +21,7 @@ export default function Projects() {
       link: "https://shuvosarkar96.github.io/campus-helper-korea/",
       linkLabel: "github.io/campus-helper-korea",
       imagePosition: "left",
-      openInNewTab: false,
+      openInNewTab: true,
     },
     {
       title: "PulseTech Ltd.",
@@ -39,7 +39,7 @@ export default function Projects() {
       link: "https://pulsetechltd.com/",
       linkLabel: "www.pulsetechltd.com",
       imagePosition: "right",
-      openInNewTab: false,
+      openInNewTab: true,
     },
     {
       title: "NirBazar - Local B2C Marketplace",
