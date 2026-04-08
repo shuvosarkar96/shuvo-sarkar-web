@@ -11,7 +11,7 @@ export default function Hero() {
       <Header />
 
       <div className="flex-1 flex items-center justify-center text-center md:text-right">
-        <h1 className={`${typography.heroTitle} w-full flex flex-col`}>
+        <h1 className={`${typography.heroTitle} w-full flex flex-col text-black dark:text-white`}>
           <span className="text-left hero-reveal">Shuvo</span>
           <span className="text-right hero-reveal">Sarkar</span>
         </h1>

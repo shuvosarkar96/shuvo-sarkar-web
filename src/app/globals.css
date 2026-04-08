@@ -4,11 +4,13 @@
   --background: #ffffff;
   --foreground: #171717;
   --font-primary: var(--font-supreme), Inter, system-ui, sans-serif;
+  --hero-color: #000;
 }
 
 .dark {
   --background: #0a0a0a;
   --foreground: #ededed;
+  --hero-color: #fff;
 }
 
 html {
@@ -50,10 +52,13 @@ code {
 .hero-reveal {
   position: relative;
   color: transparent;
-  -webkit-text-stroke: 1px #000;
-  background: linear-gradient(to right, #000 50%, transparent 50%);
+
+  -webkit-text-stroke: 1px var(--hero-color);
+
+  background: linear-gradient(to right, var(--hero-color) 50%, transparent 50%);
   background-size: 200% 100%;
   background-position: 100% 0;
+
   -webkit-background-clip: text;
   background-clip: text;
 
@@ -63,7 +68,7 @@ code {
 @keyframes heroFill {
   to {
     background-position: 0% 0;
-    -webkit-text-stroke: 0px transparent;
-    color: #000;
+    -webkit-text-stroke: 0 transparent;
+    color: var(--hero-color);
   }
 }
